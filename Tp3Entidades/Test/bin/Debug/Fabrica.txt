@@ -1,0 +1,20 @@
+Dispostivos: 
+Nombre: Notebook MAC
+Cantidad: 1
+Precio: 242424
+Modelo: Mac
+-------------------------
+
+Nombre: Huawei mate 10
+Cantidad: 64
+Precio: 15000
+Modelo: Huawei
+-------------------------
+
+Nombre: Samsung Note 10
+Cantidad: 32
+Precio: 40000
+Modelo: Samsung
+-------------------------
+
+
