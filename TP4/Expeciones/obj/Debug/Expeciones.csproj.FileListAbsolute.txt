@@ -1,0 +1,6 @@
+C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\bin\Debug\Expeciones.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\bin\Debug\Expeciones.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.csprojAssemblyReference.cache
+C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.csproj.CoreCompileInputs.cache
+C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.pdb

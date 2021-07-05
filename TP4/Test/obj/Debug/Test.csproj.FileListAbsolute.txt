@@ -1,0 +1,14 @@
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Test.exe.config
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Test.exe
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Test.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Archivos.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Entidades.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Expeciones.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Archivos.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Entidades.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Test\bin\Debug\Expeciones.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.exe
+C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.csproj.AssemblyReference.cache

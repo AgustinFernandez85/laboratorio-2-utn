@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Fabrica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><ListaDispositivos><Dispositivos xsi:type="Celular"><Nombre>Huawei mate 10</Nombre><Cantidad>50</Cantidad><Precio>4000</Precio><Modelo>Huawei</Modelo></Dispositivos></ListaDispositivos></Fabrica>

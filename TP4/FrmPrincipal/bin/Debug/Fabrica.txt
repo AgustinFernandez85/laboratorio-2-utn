@@ -1,0 +1,14 @@
+Dispostivos: 
+Nombre: Huawei mate
+Cantidad: 520
+Precio: 50300
+Modelo: Huawei
+-------------------------
+
+Nombre: PcGamer
+Cantidad: 50
+Precio: 5000
+Modelo: HP
+-------------------------
+
+

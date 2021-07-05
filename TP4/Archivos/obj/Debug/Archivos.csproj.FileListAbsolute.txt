@@ -1,0 +1,9 @@
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\bin\Debug\Archivos.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\bin\Debug\Archivos.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\bin\Debug\Expeciones.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\bin\Debug\Expeciones.pdb
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\obj\Debug\Archivos.dll
+C:\Users\agustin\source\repos\Tp3Entidades\Archivos\obj\Debug\Archivos.pdb
