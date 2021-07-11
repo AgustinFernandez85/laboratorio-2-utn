@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Archivos;
 using System.Xml.Serialization;
+using System.Threading;
 
 namespace Entidades
 {
@@ -48,7 +49,7 @@ namespace Entidades
         /// <returns>retorna true si puede, false caso contrario</returns>
         public static bool operator +(Fabrica fabrica, Dispositivos dispo) 
         {
-            if (!fabrica.ListaDispositivos.Contains(dispo))
+            if (!DispositivoDAO.CompararDispositivo(dispo))
             {
                 DispositivoDAO.InsertarDispositivo(dispo);
                 return true;
@@ -155,6 +156,63 @@ namespace Entidades
             string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "Fabrica.xml");
             Xml<Fabrica> fabricaAux = new Xml<Fabrica>();
             return fabricaAux.Guardar(path, fabrica);
+        }
+        /// <summary>
+        /// Harcodea 3 dispositivos para ser usado el metodo en un hilo
+        /// </summary>
+        /// <param name="f">es la fabrica en cuestion</param>
+        public static void AgregarNotebooksAProduccion(object f) 
+        {
+            try
+            {
+                Dispositivos d1 = new Notebook("HP 2233", 24, 44444, Notebook.EModeloNotebook.HP);
+                Dispositivos d2 = new Notebook("MacBook", 32, 66666, Notebook.EModeloNotebook.Mac);
+                Dispositivos d3 = new Notebook("ThinkPad 2233", 64, 1111, Notebook.EModeloNotebook.Thinkpad);
+
+                if (((Fabrica)f - d1) && ((Fabrica)f - d2) && ((Fabrica)f - d3))
+                {
+                    Console.WriteLine("Me encargo de eliminar si es que quedaron agregados de alguna ejecucion anterior");
+                }
+
+                if (((Fabrica)f + d1) && ((Fabrica)f + d2) && ((Fabrica)f + d3)) 
+                {
+                    Thread.Sleep(2000);
+                    Console.WriteLine($"Se Agrego 3 nuevas notebook a produccion desde el hilo {Thread.CurrentThread.Name}");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+        /// <summary>
+        /// Harcodea celulares y es usado por otro hilo
+        /// </summary>
+        /// <param name="f">fabrica en cuestion</param>
+        public static void AgregarCelularesAProduccion(object f)
+        {
+            try
+            {
+                Fabrica fabrica = (Fabrica)f;
+                Dispositivos d1 = new Celular("Huawei 123123123", 234, 44444, Celular.EModeloCelulares.Huawei);
+                Dispositivos d2 = new Celular("Nokia 22222", 224, 123123, Celular.EModeloCelulares.Nokia);
+                Dispositivos d3 = new Celular("Samsung 2233", 1, 55555, Celular.EModeloCelulares.Samsung);
+
+                if ((fabrica - d1) && (fabrica - d2) && (fabrica - d3)) 
+                {
+                    Console.WriteLine("Me encargo de eliminar si es que quedaron agregados de alguna ejecucion anterior");
+                }
+
+                if ((fabrica + d1) && (fabrica + d2) && (fabrica + d3))
+                {
+                    Thread.Sleep(2000);
+                    Console.WriteLine($"Se Agrego 3 nuevos celulares a produccion desde el hilo {Thread.CurrentThread.Name}");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
         #endregion
     }

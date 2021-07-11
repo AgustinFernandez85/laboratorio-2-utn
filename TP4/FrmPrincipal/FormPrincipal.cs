@@ -97,7 +97,7 @@ namespace FrmPrincipal
 
         private void btnStock_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(fabrica.CalcularStock());
+            MessageBox.Show(fabrica.ListaDispositivos.StockTotal());
         }
 
         private void btn_Quitar_Click(object sender, EventArgs e)

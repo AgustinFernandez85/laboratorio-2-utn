@@ -21,7 +21,15 @@ namespace FrmPrincipal
 
         private void QuitarDispositivo_Load(object sender, EventArgs e)
         {
-            this.dataGridView1.DataSource = DispositivoDAO.LeerTodo();
+            try
+            {
+                this.dataGridView1.DataSource = DispositivoDAO.LeerTodo();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -46,15 +54,22 @@ namespace FrmPrincipal
                     }
                 }
 
-                if (fabricaAux - dispo)
+                try
                 {
-                    this.dataGridView1.DataSource = null;
-                    this.dataGridView1.DataSource = DispositivoDAO.LeerTodo();
-                    MessageBox.Show("Dispositivo eliminado con exito");
+                    if (fabricaAux - dispo)
+                    {
+                        this.dataGridView1.DataSource = null;
+                        this.dataGridView1.DataSource = DispositivoDAO.LeerTodo();
+                        MessageBox.Show("Dispositivo eliminado con exito");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha podido eliminar");
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("No se ha podido eliminar");
+                    MessageBox.Show(ex.Message);
                 }
             }
         }

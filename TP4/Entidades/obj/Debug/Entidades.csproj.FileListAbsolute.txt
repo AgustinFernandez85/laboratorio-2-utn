@@ -9,3 +9,14 @@ C:\Users\agustin\source\repos\Tp3Entidades\Entidades\obj\Debug\Entidades.pdb
 C:\Users\agustin\source\repos\Tp3Entidades\Entidades\bin\Debug\Archivos.dll
 C:\Users\agustin\source\repos\Tp3Entidades\Entidades\bin\Debug\Archivos.pdb
 C:\Users\agustin\source\repos\Tp3Entidades\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\bin\Debug\Archivos.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\bin\Debug\Expeciones.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\bin\Debug\Archivos.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\bin\Debug\Expeciones.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Entidades\obj\Debug\Entidades.pdb

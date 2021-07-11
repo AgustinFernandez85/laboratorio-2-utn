@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Archivos;
 using Expeciones;
 using Entidades;
+using System.Threading;
+
 namespace Test
 {
     class Program
@@ -24,9 +26,30 @@ namespace Test
             Dispositivos d3 = new Celular("Huawei mate 10",64,15000,Celular.EModeloCelulares.Huawei);
             Celular d4 = new Celular("Samsung Note 10",32,40000,Celular.EModeloCelulares.Samsung);
 
+            //Creo los hilos que simulan el harcodeo de mas dispositivos
+            Thread hilo1 = new Thread(new ParameterizedThreadStart(Fabrica.AgregarCelularesAProduccion));
+            Thread hilo2 = new Thread(new ParameterizedThreadStart(Fabrica.AgregarNotebooksAProduccion));
+
+            try
+            {
+                if (DispositivoDAO.DeleteTodosLosDispositivos()) 
+                {
+                    Console.WriteLine("Se limpio la tabla");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             //Tratamos de cargar los dispositivos
             try
             {
+                //if ((fabrica - d1) && (fabrica - d2) && (fabrica - d3) && (fabrica - d4)) 
+                //{
+                //    Console.WriteLine("Primero me aseguro de borrar si es que quedaron guardados de alguna anterior ejecucion");
+                //}
+
                 if (fabrica + d1)
                 {
                     Console.WriteLine("Se cargo con exito el dispositivo 1");
@@ -106,6 +129,24 @@ namespace Test
             {
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.InnerException.Message);
+            }
+
+            Console.WriteLine("Presione una tecla para continuar");
+            Console.ReadKey();
+            Console.Clear();
+
+            try
+            {
+                hilo1.Name = "Hilo uno";
+                hilo2.Name = "Hilo dos";
+                Console.WriteLine("Se hardcodean 6 dispositivos de diferentes hilos");
+                hilo1.Start(fabrica);
+                Thread.Sleep(5000);
+                hilo2.Start(fabrica);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
 
             Console.WriteLine("Presione una tecla para continuar");

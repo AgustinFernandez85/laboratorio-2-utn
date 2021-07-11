@@ -4,3 +4,9 @@ C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.cspro
 C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.csproj.CoreCompileInputs.cache
 C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.dll
 C:\Users\agustin\source\repos\Tp3Entidades\Expeciones\obj\Debug\Expeciones.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Expeciones\bin\Debug\Expeciones.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Expeciones\bin\Debug\Expeciones.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Expeciones\obj\Debug\Expeciones.csproj.AssemblyReference.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Expeciones\obj\Debug\Expeciones.csproj.CoreCompileInputs.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Expeciones\obj\Debug\Expeciones.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Expeciones\obj\Debug\Expeciones.pdb

@@ -12,3 +12,17 @@ C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.csproj.CopyComple
 C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.exe
 C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.pdb
 C:\Users\agustin\source\repos\Tp3Entidades\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Test.exe.config
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Test.exe
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Test.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Archivos.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Entidades.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Expeciones.dll
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Archivos.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Entidades.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\bin\Debug\Expeciones.pdb
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\obj\Debug\Test.exe
+C:\Users\agus_\Desktop\Facultad\laboratorio-2-utn\TP4\Test\obj\Debug\Test.pdb

@@ -10,8 +10,10 @@ namespace Entidades
 {
     public static class DispositivoDAO
     {
+        #region Atributos
         private static SqlConnection conexion;
         private static SqlCommand comando;
+        #endregion
 
         #region Constructor
         static DispositivoDAO()
@@ -25,6 +27,11 @@ namespace Entidades
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Inserta un nuevo registro en la tabla
+        /// </summary>
+        /// <param name="dispo">dispositivo a agregar</param>
+        /// <returns>retorna true si lo pudo agregar, false caso contrario</returns>
         public static bool InsertarDispositivo(Dispositivos dispo) 
         {
             bool pudeInsertar = false;
@@ -64,10 +71,14 @@ namespace Entidades
             finally 
             {
                 DispositivoDAO.conexion.Close();
+                DispositivoDAO.comando.Parameters.Clear();
             }
             return pudeInsertar;
         }
-
+        /// <summary>
+        /// Trae a todos los registros de la tabla
+        /// </summary>
+        /// <returns>retorna una lista con todos los datos leidos</returns>
         public static List<Dispositivos> LeerTodo() 
         {
             List<Dispositivos> listaDispositivos = new List<Dispositivos>();
@@ -92,7 +103,7 @@ namespace Entidades
                         Enum.TryParse(reader["modelo"].ToString(), out modelo);
                         notebook.Modelo = modelo;
                         notebook.Cantidad = (int)reader["cantidad"];
-                        notebook.Precio = (float)reader["precio"];
+                        notebook.Precio = (double)reader["precio"];
                         notebook.Nombre = reader["nombre"].ToString();
 
                         listaDispositivos.Add(notebook);
@@ -123,6 +134,55 @@ namespace Entidades
             return listaDispositivos;
         }
 
+        /// <summary>
+        /// Busca si existe el dispositivo en la base de datos
+        /// </summary>
+        /// <param name="dispo">dispositivo a buscar</param>
+        /// <returns>true si existe el dispo en la tabla, false caso contrario</returns>
+        public static bool CompararDispositivo(Dispositivos dispo) 
+        {
+            bool hayCoincidencia = false;
+            string sql = "SELECT * FROM Dispositivos";
+            DispositivoDAO.comando.CommandText = sql;
+
+            try
+            {
+                if (DispositivoDAO.conexion.State != ConnectionState.Open)
+                {
+                    DispositivoDAO.conexion.Open();
+                }
+
+                SqlDataReader reader = DispositivoDAO.comando.ExecuteReader();
+
+                while (reader.Read()) 
+                {
+                    string nombre = reader["nombre"].ToString();
+                    if (dispo.Nombre == nombre) 
+                    {
+                        hayCoincidencia = true;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw new ArchivosException("Error al conectarse con la base de datos", e);
+            }
+            finally
+            {
+                if (DispositivoDAO.conexion.State == ConnectionState.Open)
+                {
+                    DispositivoDAO.conexion.Close();
+                }
+                DispositivoDAO.comando.Parameters.Clear();
+            }
+            return hayCoincidencia;
+        }
+
+        /// <summary>
+        /// Elimina un dispositivo buscando coincidencia por el nombre
+        /// </summary>
+        /// <param name="nombre">nombre del dispositivo</param>
+        /// <returns>retorna true si lo puede eliminar, false caso contrario</returns>
         public static bool DeleteDispositivo(string nombre) 
         {
             bool pudeEliminar = false;
@@ -149,6 +209,45 @@ namespace Entidades
                 throw new ArchivosException("Error al conectarse con la base de datos", e);
             }
             finally 
+            {
+                if (DispositivoDAO.conexion.State == ConnectionState.Open)
+                {
+                    DispositivoDAO.conexion.Close();
+                }
+                DispositivoDAO.comando.Parameters.Clear();
+            }
+            return pudeEliminar;
+        }
+
+        /// <summary>
+        /// Borra todos los registros de la tabla
+        /// </summary>
+        /// <returns>true si pudo borrar, false caso contrario</returns>
+        public static bool DeleteTodosLosDispositivos()
+        {
+            bool pudeEliminar = false;
+            string sql = "DELETE FROM Dispositivos";
+            DispositivoDAO.comando.CommandText = sql;
+
+            try
+            {
+                if (DispositivoDAO.conexion.State != ConnectionState.Open)
+                {
+                    DispositivoDAO.conexion.Open();
+                }
+
+                int filasAfectadas = DispositivoDAO.comando.ExecuteNonQuery();
+
+                if (filasAfectadas > 0)
+                {
+                    pudeEliminar = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw new ArchivosException("Error al conectarse con la base de datos", e);
+            }
+            finally
             {
                 if (DispositivoDAO.conexion.State == ConnectionState.Open)
                 {
