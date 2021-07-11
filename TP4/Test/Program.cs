@@ -19,7 +19,7 @@ namespace Test
             
             //Creo la fabrica
             Fabrica fabrica = new Fabrica();
-
+            fabrica.HarcodearProductos();
             //Harcodeo los dispositivos
             Dispositivos d1 = new Notebook("Notebook hp", 25,500,Notebook.EModeloNotebook.HP);
             Notebook d2 = new Notebook("Notebook MAC", 1,242424,Notebook.EModeloNotebook.Mac);

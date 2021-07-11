@@ -16,12 +16,15 @@ namespace Entidades
     public sealed class Fabrica
     {
         #region Atributos
+        public delegate void DelegadoHarcodeo();
+        public event DelegadoHarcodeo miEventoHarcodeo;
         private List<Dispositivos> listaDispositivos;
         #endregion
 
         #region Constructores
         public Fabrica()
         {
+            miEventoHarcodeo += this.HarcodearProductos;
             this.listaDispositivos = new List<Dispositivos>();
         }
         #endregion
@@ -156,6 +159,25 @@ namespace Entidades
             string path = String.Concat(AppDomain.CurrentDomain.BaseDirectory, "Fabrica.xml");
             Xml<Fabrica> fabricaAux = new Xml<Fabrica>();
             return fabricaAux.Guardar(path, fabrica);
+        }
+        public void HarcodearProductos() 
+        {
+            if (miEventoHarcodeo != null)
+            {
+                Dispositivos d1 = new Notebook("notebook1", 24, 44444, Notebook.EModeloNotebook.HP);
+                Dispositivos d2 = new Notebook("notebook2", 32, 66666, Notebook.EModeloNotebook.Mac);
+                Dispositivos d3 = new Notebook("notebook3", 64, 1111, Notebook.EModeloNotebook.Thinkpad);
+                Dispositivos d4 = new Celular("Celular1", 234, 44444, Celular.EModeloCelulares.Huawei);
+                Dispositivos d5 = new Celular("Celular2", 224, 123123, Celular.EModeloCelulares.Nokia);
+                Dispositivos d6 = new Celular("Celular3", 1, 55555, Celular.EModeloCelulares.Samsung);
+
+                this.ListaDispositivos.Add(d1);
+                this.ListaDispositivos.Add(d2);
+                this.ListaDispositivos.Add(d3);
+                this.ListaDispositivos.Add(d4);
+                this.ListaDispositivos.Add(d5);
+                this.ListaDispositivos.Add(d6);
+            }
         }
         /// <summary>
         /// Harcodea 3 dispositivos para ser usado el metodo en un hilo
