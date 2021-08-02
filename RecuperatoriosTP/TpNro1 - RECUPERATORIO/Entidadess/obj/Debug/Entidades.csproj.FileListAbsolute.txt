@@ -1,0 +1,24 @@
+C:\Users\Agustin\source\repos\Entidades\Entidadess\bin\Debug\Entidadess.dll
+C:\Users\Agustin\source\repos\Entidades\Entidadess\bin\Debug\Entidadess.pdb
+C:\Users\Agustin\source\repos\Entidades\Entidadess\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Agustin\source\repos\Entidades\Entidadess\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Agustin\source\repos\Entidades\Entidadess\obj\Debug\Entidadess.dll
+C:\Users\Agustin\source\repos\Entidades\Entidadess\obj\Debug\Entidadess.pdb
+C:\Users\Agustin\Downloads\Tp_laboratorio2-master\Tp_laboratorio2-master\Entidades\Entidadess\bin\Debug\Entidadess.dll
+C:\Users\Agustin\Downloads\Tp_laboratorio2-master\Tp_laboratorio2-master\Entidades\Entidadess\bin\Debug\Entidadess.pdb
+C:\Users\Agustin\Downloads\Tp_laboratorio2-master\Tp_laboratorio2-master\Entidades\Entidadess\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Agustin\Downloads\Tp_laboratorio2-master\Tp_laboratorio2-master\Entidades\Entidadess\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Agustin\Downloads\Tp_laboratorio2-master\Tp_laboratorio2-master\Entidades\Entidadess\obj\Debug\Entidadess.dll
+C:\Users\Agustin\Downloads\Tp_laboratorio2-master\Tp_laboratorio2-master\Entidades\Entidadess\obj\Debug\Entidadess.pdb
+C:\Users\agus\Desktop\Tp_laboratorio2-master\Tp_laboratorio2-master\TpNro1\Entidadess\bin\Debug\Entidadess.dll
+C:\Users\agus\Desktop\Tp_laboratorio2-master\Tp_laboratorio2-master\TpNro1\Entidadess\bin\Debug\Entidadess.pdb
+C:\Users\agus\Desktop\Tp_laboratorio2-master\Tp_laboratorio2-master\TpNro1\Entidadess\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\agus\Desktop\Tp_laboratorio2-master\Tp_laboratorio2-master\TpNro1\Entidadess\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\agus\Desktop\Tp_laboratorio2-master\Tp_laboratorio2-master\TpNro1\Entidadess\obj\Debug\Entidadess.dll
+C:\Users\agus\Desktop\Tp_laboratorio2-master\Tp_laboratorio2-master\TpNro1\Entidadess\obj\Debug\Entidadess.pdb
+C:\Users\agustin\Desktop\github\laboratorio-2-utn\RecuperatoriosTP\TpNro1 - RECUPERATORIO\Entidadess\bin\Debug\Entidadess.dll
+C:\Users\agustin\Desktop\github\laboratorio-2-utn\RecuperatoriosTP\TpNro1 - RECUPERATORIO\Entidadess\bin\Debug\Entidadess.pdb
+C:\Users\agustin\Desktop\github\laboratorio-2-utn\RecuperatoriosTP\TpNro1 - RECUPERATORIO\Entidadess\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\agustin\Desktop\github\laboratorio-2-utn\RecuperatoriosTP\TpNro1 - RECUPERATORIO\Entidadess\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\agustin\Desktop\github\laboratorio-2-utn\RecuperatoriosTP\TpNro1 - RECUPERATORIO\Entidadess\obj\Debug\Entidadess.dll
+C:\Users\agustin\Desktop\github\laboratorio-2-utn\RecuperatoriosTP\TpNro1 - RECUPERATORIO\Entidadess\obj\Debug\Entidadess.pdb
